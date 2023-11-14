@@ -20,55 +20,63 @@
 
   <body>
     <header>
-      <div class="container"></div>
-
-      <nav>
-        <div class="logo">Britlex</div>
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Skills</a>
-          </li>
-          <li>
-            <a href="">About Us</a>
-          </li>
-          <li>
-            <a href="">Pricing</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button>Let’s Talk</button>
+      <div class="container">
+        <div class="nav-container">
+          <nav class="navigation">
+            <div class="logo">Britlex</div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="nav-button" type="button">Let’s Talk</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <h1>Learn Any Foreign Language</h1>
-          <p>
-            With our teachers who write a program for each student, you will be
-            able to make your first sketch after the first lesson.
-          </p>
-          <img src="./images/bulb-icon.svg" />
-          <button type="button">Get started</button>
-          <img
-            src="./images/learning-languages.svg"
-            alt="learning"
-            width="654"
-            height="510"
-          />
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-title-info">
+                <h1 class="hero-title">Learn Any Foreign Language</h1>
+                <img class="hero-images" src="./images/bulb-icon.svg" />
+              </div>
+              <p class="hero-text">
+                With our teachers who write a program for each student, you will
+                be able to make your first sketch after the first lesson.
+              </p>
+              <button class="hero-button" type="button">Get started</button>
+            </div>
+            <img
+              src="./images/learning-languages.svg"
+              alt="learning"
+              width="654"
+              height="510"
+            />
+          </div>
         </div>
       </section>
 
       <!-- Skills -->
       <section class="skills">
         <div class="container">
-          <h2>Skills</h2>
+          <h2 class="skills-title">Skills</h2>
           <ul>
             <il>
               <img
@@ -214,13 +222,14 @@
     </main>
 
     <footer>
-      <div class="container"></div>
-      <div class="logo">Britlex</div>
-      <ul>
-        <li>Terms and Conditions</li>
-        <li>Privacy Policy</li>
-        <li>Cookie Policy</li>
-      </ul>
+      <div class="container">
+        <div class="logo">Britlex</div>
+        <ul>
+          <li>Terms and Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Cookie Policy</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
