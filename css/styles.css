@@ -15,6 +15,10 @@ p {
 
 section {
   padding-bottom: 180px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
 }
 
 ul,
@@ -35,11 +39,21 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1600px;
   padding-right: 131px;
   padding-left: 131px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 /* header */
@@ -115,6 +129,13 @@ img {
   width: 386px;
   margin-top: 0;
   margin-right: 34px;
+
+  @media screen and (max-width: 768px) {
+    width: 217px;
+    font-size: 36px;
+    line-height: 45px;
+    margin-right: 0;
+  }
 }
 
 .hero-text {
@@ -125,10 +146,29 @@ img {
   width: 540px;
   margin-top: 40px;
   margin-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    width: 338px;
+  }
 }
 
-/* .hero-images {
-} */
+.hero-images {
+  margin-top: 92px;
+}
+
+@media screen and (max-width: 768px) {
+  img[alt="learning"] {
+    width: 352px;
+    height: 352px;
+  }
+
+  .hero-images {
+    margin-top: 68px;
+    width: 52px;
+    height: 52px;
+  }
+}
 
 .hero-title-info {
   display: flex;
@@ -151,6 +191,13 @@ img {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  @media screen and (max-width: 768px) {
+    width: 236px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
 }
 
 /* Skills */
@@ -164,11 +211,21 @@ img {
   line-height: normal;
 
   margin: 0 auto 60px auto;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .skills-list {
   display: flex;
   gap: 30px;
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 }
 
 .skills-item {
@@ -213,6 +270,11 @@ img {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .skills-title-text {
@@ -243,6 +305,61 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-text {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .skills-title-text {
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .skills-button {
+    width: 178px;
+    height: 50px;
+  }
+
+  img[alt="Goals"] {
+    width: 214px;
+    height: 214px;
+  }
+  img[alt="Typewriter"] {
+    width: 200px;
+    height: 200px;
+  }
+  img[alt="House"] {
+    width: 200px;
+    height: 200px;
+  }
+  img[alt="Podcast"] {
+    width: 202px;
+    height: 234px;
+  }
+
+  .skills-item-first {
+    width: 224px;
+    height: 662px;
+    padding-top: 0;
+  }
+
+  .skills-item-last {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 462px;
+    height: 210px;
+    padding-top: 0;
+  }
+
+  .skills-item {
+    width: 227px;
+    height: 441px;
+    padding-top: 0;
+  }
 }
 
 /* About Us */
@@ -452,4 +569,10 @@ hr {
 
 .footer-item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-widt: 320px) {
 }
