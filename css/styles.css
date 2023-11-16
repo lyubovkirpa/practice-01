@@ -1,6 +1,10 @@
 body {
   font-family: Poppins;
   padding: 55px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 h1,
@@ -94,6 +98,24 @@ button {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .logo-type {
+    font-size: 30px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-container {
+    margin-bottom: 40px;
+  }
+}
+
 .nav-item {
   color: #263238;
   font-size: 20px;
@@ -118,6 +140,10 @@ button {
   background: #fff;
   margin-left: 121px;
   margin-bottom: 55px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 /* Hero */
@@ -342,7 +368,7 @@ button {
   }
 
   .skills-item-first {
-    width: 224px;
+    width: 218px;
     height: 662px;
     padding-top: 0;
   }
@@ -350,13 +376,13 @@ button {
   .skills-item-last {
     display: flex;
     flex-direction: row-reverse;
-    width: 462px;
+    width: 460px;
     height: 210px;
     padding-top: 0;
   }
 
   .skills-item {
-    width: 227px;
+    width: 225px;
     height: 441px;
     padding-top: 0;
   }
@@ -412,19 +438,45 @@ button {
   line-height: normal;
 }
 
-.about-item-text {
-  color: #8f95a5;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .about-item-text-double {
   color: #8f95a5;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    font-size: 30px;
+    line-height: 80px;
+
+    margin-bottom: 40px;
+  }
+
+  .about-text {
+    width: 320px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .about-item-number {
+    font-size: 22px;
+    line-height: 80px;
+  }
+
+  .about-item-text {
+    font-size: 13px;
+  }
+
+  .about-item-text-double {
+    font-size: 13px;
+  }
+
+  img[alt="Business"] {
+    width: 295px;
+    height: 295px;
+  }
 }
 
 /* Pricing */
@@ -485,6 +537,47 @@ button {
   line-height: normal;
 }
 
+@media screen and (max-width: 768px) {
+  .pricing-item {
+    width: 206px;
+  }
+
+  .pricing-title {
+    width: 162px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .pricing-text {
+    font-size: 14px;
+  }
+
+  .pricing-button {
+    width: 205px;
+    height: 45px;
+  }
+
+  .pricing-button-number {
+    font-size: 22px;
+  }
+
+  .pricing-button-item {
+    font-size: 16px;
+  }
+
+  img[alt="online"] {
+    height: 200px;
+  }
+
+  img[alt="lesson"] {
+    height: 200px;
+  }
+
+  img[alt="webinar"] {
+    height: 200px;
+  }
+}
+
 /* Contact Us */
 .contact {
   padding-bottom: 55px;
@@ -539,10 +632,43 @@ button {
   letter-spacing: 0.6px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-bottom: 100px;
+  }
+
+  .contact-text {
+    width: 420px;
+    font-size: 14px;
+  }
+
+  .contact-button-enter {
+    width: 283px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+
+    margin-right: 6px;
+  }
+
+  .contact-button-subscribe {
+    width: 145px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+
+  img[alt="contact"] {
+    width: 230px;
+  }
+}
+
 /* footer */
 .footer-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 hr {
@@ -572,6 +698,23 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  hr {
+    border: none; /* Убираем границу */
+    width: 1338px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #c4c4c4;
+    margin-bottom: 30px;
+  }
+
+  .footer-item {
+    font-size: 13px;
+    margin-right: 25px;
+  }
+
+  .footer-item:not(:first-child) {
+    list-style: disc;
+  }
 }
 
 @media screen and (max-widt: 320px) {
