@@ -25,6 +25,12 @@ section {
   }
 }
 
+@media screen and (max-width: 320px) {
+  section {
+    padding-bottom: 55px;
+  }
+}
+
 ul,
 hr {
   list-style: none;
@@ -57,6 +63,14 @@ button {
     width: 768px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -116,6 +130,24 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  .logo-type {
+    font-size: 24px;
+  }
+  .footer-box > .logo {
+    text-align: center;
+  }
+
+  .footer-item {
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
 .nav-item {
   color: #263238;
   font-size: 20px;
@@ -146,6 +178,27 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-container {
+    display: block;
+  }
+
+  .navigation {
+    display: block;
+  }
+}
+
 /* Hero */
 .hero-title {
   color: #000;
@@ -164,6 +217,16 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .hero-title {
+    width: 220px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+}
+
 .hero-text {
   color: #8f95a5;
   font-size: 24px;
@@ -176,6 +239,22 @@ button {
   @media screen and (max-width: 768px) {
     font-size: 16px;
     width: 338px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 14px;
+    width: 100%;
   }
 }
 
@@ -196,6 +275,17 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  img[alt="learning"] {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-images {
+    display: none;
+  }
+}
+
 .hero-title-info {
   display: flex;
 }
@@ -203,6 +293,11 @@ button {
 .hero-container {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 320px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .hero-button {
@@ -226,6 +321,14 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .hero-button {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
 /* Skills */
 .title {
   display: flex;
@@ -242,7 +345,13 @@ button {
     font-size: 30px;
     font-weight: 600;
     line-height: 80px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 24px;
   }
 }
 
@@ -364,7 +473,6 @@ button {
   }
   img[alt="Podcast"] {
     width: 202px;
-    height: 234px;
   }
 
   .skills-item-first {
@@ -385,6 +493,38 @@ button {
     width: 225px;
     height: 441px;
     padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .skills-content {
+    margin-bottom: 10px;
+  }
+  .skills-box {
+    flex-direction: column;
+  }
+
+  .skills-item,
+  .skills-item-first,
+  .skills-item-last {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .skills-item-last {
+    flex-direction: column;
+  }
+
+  .skills-img {
+    margin: 0 auto;
   }
 }
 
@@ -476,6 +616,45 @@ button {
   img[alt="Business"] {
     width: 295px;
     height: 295px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-wrapp {
+    /* display: flex; */
+    flex-direction: column-reverse;
+  }
+
+  .about-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 13px;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .about-list {
+    /* display: block; */
+    margin-top: 15px;
+  }
+
+  .about-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .about-item-number {
+    font-size: 24px;
+    line-height: 40px;
   }
 }
 
@@ -578,6 +757,46 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .pricing-list {
+    display: block;
+  }
+
+  .pricing-item {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .pricing-title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  .pricing-text {
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .pricing-button {
+    width: 170px;
+    height: 37px;
+    margin: auto;
+  }
+
+  .pricing-button-number {
+    font-size: 18px;
+  }
+
+  .pricing-button-item {
+    font-size: 14px;
+  }
+}
+
 /* Contact Us */
 .contact {
   padding-bottom: 55px;
@@ -608,6 +827,7 @@ button {
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid #8f95a5;
+  text-align: start;
 
   color: #8f95a5;
   font-size: 16px;
@@ -664,7 +884,44 @@ button {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .contact-content {
+    display: block;
+  }
+
+  .contact-text {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .contact-button-list {
+    display: block;
+  }
+
+  .contact-button-enter {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .contact-button-subscribe {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  img[alt="contact"] {
+    margin: 0 auto;
+  }
+}
+
 /* footer */
+
 .footer-box {
   display: flex;
   justify-content: space-between;
@@ -698,15 +955,6 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  hr {
-    border: none; /* Убираем границу */
-    width: 1338px;
-    height: 1px;
-    flex-shrink: 0;
-    background: #c4c4c4;
-    margin-bottom: 30px;
-  }
-
   .footer-item {
     font-size: 13px;
     margin-right: 25px;
@@ -717,5 +965,30 @@ hr {
   }
 }
 
-@media screen and (max-widt: 320px) {
+@media screen and (max-width: 320px) {
+  .footer-box {
+    display: block;
+  }
+
+  .footer-item {
+    font-size: 10px;
+    letter-spacing: 0;
+    margin-right: 20px;
+    line-height: normal;
+  }
+
+  .footer-list {
+    margin-top: 15px;
+  }
 }
+
+/* @media screen and (min-width: 768px) {
+  .footer-box {
+    display: block;
+  }
+
+  .footer-item {
+    font-size: 11px;
+    font-weight: 500;
+  }
+} */
